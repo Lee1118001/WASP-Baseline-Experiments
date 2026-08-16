@@ -36,7 +36,7 @@ is_retryable_error() {
     local logfile="$1"
 
     grep -Eq \
-'TimeoutError|Request timed out|Page\.goto: Timeout|Page\.captureScreenshot|TargetClosedError|APIConnectionError|Connection error|ConnectError|timed out' \
+'TimeoutError|Request timed out|Page\.goto: Timeout|Page\.captureScreenshot|TargetClosedError|APIConnectionError|Connection error|ConnectError|timed out|Tracing\.stop: ENOENT|playwright-artifacts' \
     "$logfile"
 }
 
@@ -105,8 +105,17 @@ run_group() {
     done
 }
 
+START_GROUP="${START_GROUP:-0}"
+
 for goal_idx in 0 1; do
     for injection_idx in 0 1; do
+        group_idx=$((goal_idx * 2 + injection_idx))
+
+        if [ "$group_idx" -lt "$START_GROUP" ]; then
+            echo "Skipping completed group $group_idx"
+            continue
+        fi
+
         run_group "$goal_idx" "$injection_idx" || exit 1
     done
 done
