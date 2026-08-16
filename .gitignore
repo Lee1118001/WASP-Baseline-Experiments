@@ -216,3 +216,19 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Local API credentials
+.env.openai
+.env.qwen
+.env.webarena
+
+# Runtime experiment artifacts
+results/raw/
+results/logs/
+
+# Local temporary working copies
+*.working
+
+# Python/cache
+__pycache__/
+*.pyc

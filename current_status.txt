@@ -1,0 +1,5 @@
+?? ../../.env.openai
+?? ../../.env.qwen
+?? ../../.env.webarena
+?? ../../current_status.txt
+?? ../../defenses/

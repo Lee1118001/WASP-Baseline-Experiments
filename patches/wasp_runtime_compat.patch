@@ -1,0 +1,24 @@
+diff --git a/.gitignore b/.gitignore
+index 83972fa..6ea0b83 100644
+--- a/.gitignore
++++ b/.gitignore
+@@ -216,3 +216,19 @@ __marimo__/
+ 
+ # Streamlit
+ .streamlit/secrets.toml
++
++# Local API credentials
++.env.openai
++.env.qwen
++.env.webarena
++
++# Runtime experiment artifacts
++results/raw/
++results/logs/
++
++# Local temporary working copies
++*.working
++
++# Python/cache
++__pycache__/
++*.pyc
