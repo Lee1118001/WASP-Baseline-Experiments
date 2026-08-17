@@ -181,7 +181,8 @@ class AgentPipeline(BasePipelineElement):
 
         if config.defense == "ipiguard":
             client = llm.client
-            if "gpt" in config.llm or "Qwen" in config.llm or "llama" in config.llm:
+            model_lower = config.llm.lower()
+            if "gpt" in model_lower or "qwen" in model_lower or "llama" in model_lower:
                 construct_llm = OpenAIConstructLLM(client, config.llm)
                 traverse_llm = OpenAITraverseLLM(client, config.llm)
             else:

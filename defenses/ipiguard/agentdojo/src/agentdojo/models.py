@@ -48,6 +48,8 @@ class ModelsEnum(StrEnum):
     """Qwen 2.5 32B"""
     QWEN_2_5_72B = "Qwen/Qwen2.5-72B-Instruct"
     """Qwen 2.5 72B"""
+    QWEN_3_MAX_2026_01_23 = "qwen3-max-2026-01-23"
+    """Qwen3 Max 2026-01-23"""
     DEEPSEEK_V3 = "deepseek-ai/DeepSeek-V3"
     """DeepSeek V3"""
     DEEPSEEK_R1 = "deepseek-ai/DeepSeek-R1"
@@ -95,6 +97,7 @@ MODEL_PROVIDERS = {
     ModelsEnum.QWEN_2_5_7B: "vllm",
     ModelsEnum.QWEN_2_5_32B: "qdd",
     ModelsEnum.QWEN_2_5_72B: "qdd",
+    ModelsEnum.QWEN_3_MAX_2026_01_23: "openai",
     ModelsEnum.DEEPSEEK_LLAMA: "vllm",
     ModelsEnum.PHI_4: "vllm",
     ModelsEnum.DEEPSEEK_V3: "deepseek",
@@ -133,6 +136,7 @@ MODEL_NAMES = {
     "Qwen/Qwen2.5-7B-Instruct": "Qwen created by Alibaba Cloud.",
     "Qwen/Qwen2.5-32B-Instruct": "Qwen created by Alibaba Cloud.",
     "Qwen/Qwen2.5-72B-Instruct": "Qwen created by Alibaba Cloud.",
+    "qwen3-max-2026-01-23": "Qwen created by Alibaba Cloud.",
     "deepseek-ai/DeepSeek-R1-Distill-Llama-8B": "AI assistant",
     "deepseek-ai/DeepSeek-V3": "DeepSeek V3",
     "deepseek-ai/DeepSeek-R1": "DeepSeek R1",
