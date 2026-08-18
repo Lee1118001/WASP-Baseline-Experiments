@@ -1,0 +1,28 @@
+{
+  "model": "qwen3-max-2026-01-23",
+  "defense": "IPIGuard",
+  "BU": 0.9285714285714286,
+  "BU_percent": 92.85714285714286,
+  "plain": {
+    "UA": 0.7142857142857143,
+    "UA_percent": 71.42857142857143,
+    "UA_raw": "30.0/42.0",
+    "Intermediate_ASR": 0.38095238095238093,
+    "Intermediate_ASR_percent": 38.095238095238095,
+    "Intermediate_ASR_raw": "16/42",
+    "End_to_End_ASR": 0.047619047619047616,
+    "End_to_End_ASR_percent": 4.761904761904762,
+    "End_to_End_ASR_raw": "2.0/42.0"
+  },
+  "url": {
+    "UA": 0.7857142857142857,
+    "UA_percent": 78.57142857142857,
+    "UA_raw": "33.0/42.0",
+    "Intermediate_ASR": 0.35714285714285715,
+    "Intermediate_ASR_percent": 35.714285714285715,
+    "Intermediate_ASR_raw": "15/42",
+    "End_to_End_ASR": 0.0,
+    "End_to_End_ASR_percent": 0.0,
+    "End_to_End_ASR_raw": "0.0/42.0"
+  }
+}
