@@ -1,0 +1,93 @@
+{
+  "description": "WASP Table 11 evaluation summary",
+  "metric_unit": "percent",
+  "BU_denominator": 42,
+  "attack_denominator_per_format": 42,
+  "attack_denominator_overall": 84,
+  "results": [
+    {
+      "model": "Qwen3-Max",
+      "defense": "No Defense",
+      "BU": 92.86,
+      "Plain_UA": 59.52,
+      "Plain_Intermediate_ASR": 26.19,
+      "Plain_E2E_ASR": 7.14,
+      "URL_UA": 85.71,
+      "URL_Intermediate_ASR": 47.62,
+      "URL_E2E_ASR": 9.52,
+      "Overall_UA": 72.62,
+      "Overall_Intermediate_ASR": 36.9,
+      "Overall_E2E_ASR": 8.33
+    },
+    {
+      "model": "Qwen3-Max",
+      "defense": "IPIGuard",
+      "BU": 92.86,
+      "Plain_UA": 71.43,
+      "Plain_Intermediate_ASR": 38.1,
+      "Plain_E2E_ASR": 4.76,
+      "URL_UA": 78.57,
+      "URL_Intermediate_ASR": 35.71,
+      "URL_E2E_ASR": 0.0,
+      "Overall_UA": 75.0,
+      "Overall_Intermediate_ASR": 36.9,
+      "Overall_E2E_ASR": 2.38
+    },
+    {
+      "model": "Qwen3-Max",
+      "defense": "MELON-Aug",
+      "BU": 95.24,
+      "Plain_UA": 50.0,
+      "Plain_Intermediate_ASR": 14.29,
+      "Plain_E2E_ASR": 2.38,
+      "URL_UA": 33.33,
+      "URL_Intermediate_ASR": 7.14,
+      "URL_E2E_ASR": 0.0,
+      "Overall_UA": 41.67,
+      "Overall_Intermediate_ASR": 10.71,
+      "Overall_E2E_ASR": 1.19
+    },
+    {
+      "model": "GPT-4o",
+      "defense": "No Defense",
+      "BU": 90.48,
+      "Plain_UA": 80.95,
+      "Plain_Intermediate_ASR": 26.19,
+      "Plain_E2E_ASR": 0.0,
+      "URL_UA": 54.76,
+      "URL_Intermediate_ASR": 50.0,
+      "URL_E2E_ASR": 14.29,
+      "Overall_UA": 67.86,
+      "Overall_Intermediate_ASR": 38.1,
+      "Overall_E2E_ASR": 7.14
+    },
+    {
+      "model": "GPT-4o",
+      "defense": "IPIGuard",
+      "BU": 83.33,
+      "Plain_UA": 73.81,
+      "Plain_Intermediate_ASR": 26.19,
+      "Plain_E2E_ASR": 2.38,
+      "URL_UA": 69.05,
+      "URL_Intermediate_ASR": 14.29,
+      "URL_E2E_ASR": 0.0,
+      "Overall_UA": 71.43,
+      "Overall_Intermediate_ASR": 20.24,
+      "Overall_E2E_ASR": 1.19
+    },
+    {
+      "model": "GPT-4o",
+      "defense": "MELON-Aug",
+      "BU": 85.71,
+      "Plain_UA": 42.86,
+      "Plain_Intermediate_ASR": 2.38,
+      "Plain_E2E_ASR": 0.0,
+      "URL_UA": 30.95,
+      "URL_Intermediate_ASR": 0.0,
+      "URL_E2E_ASR": 0.0,
+      "Overall_UA": 36.9,
+      "Overall_Intermediate_ASR": 1.19,
+      "Overall_E2E_ASR": 0.0
+    }
+  ]
+}

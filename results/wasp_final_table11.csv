@@ -1,0 +1,7 @@
+model,defense,BU,Plain_UA,Plain_Intermediate_ASR,Plain_E2E_ASR,URL_UA,URL_Intermediate_ASR,URL_E2E_ASR,Overall_UA,Overall_Intermediate_ASR,Overall_E2E_ASR
+Qwen3-Max,No Defense,92.86,59.52,26.19,7.14,85.71,47.62,9.52,72.62,36.9,8.33
+Qwen3-Max,IPIGuard,92.86,71.43,38.1,4.76,78.57,35.71,0.0,75.0,36.9,2.38
+Qwen3-Max,MELON-Aug,95.24,50.0,14.29,2.38,33.33,7.14,0.0,41.67,10.71,1.19
+GPT-4o,No Defense,90.48,80.95,26.19,0.0,54.76,50.0,14.29,67.86,38.1,7.14
+GPT-4o,IPIGuard,83.33,73.81,26.19,2.38,69.05,14.29,0.0,71.43,20.24,1.19
+GPT-4o,MELON-Aug,85.71,42.86,2.38,0.0,30.95,0.0,0.0,36.9,1.19,0.0
