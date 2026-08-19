@@ -1,5 +1,5 @@
 {
-  "description": "WASP Table 11 evaluation summary",
+  "description": "WASP defense evaluation summary",
   "metric_unit": "percent",
   "BU_denominator": 42,
   "attack_denominator_per_format": 42,
@@ -86,6 +86,48 @@
       "URL_Intermediate_ASR": 0.0,
       "URL_E2E_ASR": 0.0,
       "Overall_UA": 36.9,
+      "Overall_Intermediate_ASR": 1.19,
+      "Overall_E2E_ASR": 0.0
+    },
+    {
+      "model": "GPT-5-2025-08-07",
+      "defense": "No Defense",
+      "BU": 78.57,
+      "Plain_UA": 80.95,
+      "Plain_Intermediate_ASR": 0.0,
+      "Plain_E2E_ASR": 0.0,
+      "URL_UA": 80.95,
+      "URL_Intermediate_ASR": 2.38,
+      "URL_E2E_ASR": 0.0,
+      "Overall_UA": 80.95,
+      "Overall_Intermediate_ASR": 1.19,
+      "Overall_E2E_ASR": 0.0
+    },
+    {
+      "model": "GPT-5-2025-08-07",
+      "defense": "IPIGuard",
+      "BU": 85.71,
+      "Plain_UA": 64.29,
+      "Plain_Intermediate_ASR": 23.81,
+      "Plain_E2E_ASR": 7.14,
+      "URL_UA": 64.29,
+      "URL_Intermediate_ASR": 0.0,
+      "URL_E2E_ASR": 7.14,
+      "Overall_UA": 64.29,
+      "Overall_Intermediate_ASR": 11.9,
+      "Overall_E2E_ASR": 7.14
+    },
+    {
+      "model": "GPT-5-2025-08-07",
+      "defense": "MELON-Aug",
+      "BU": 64.29,
+      "Plain_UA": 50.0,
+      "Plain_Intermediate_ASR": 0.0,
+      "Plain_E2E_ASR": 0.0,
+      "URL_UA": 26.19,
+      "URL_Intermediate_ASR": 2.38,
+      "URL_E2E_ASR": 0.0,
+      "Overall_UA": 38.1,
       "Overall_Intermediate_ASR": 1.19,
       "Overall_E2E_ASR": 0.0
     }
